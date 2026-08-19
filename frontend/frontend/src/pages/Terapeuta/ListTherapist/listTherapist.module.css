@@ -1,0 +1,196 @@
+.topHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.addBtn {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.addBtn:hover {
+  background-color: var(--button-efeito);
+}
+
+.tableCard {
+  background-color: var(--background-color-tertiary);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.titleArea h2 {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.titleArea p {
+  color: #808191;
+  font-size: 0.85rem;
+  margin: 4px 0 0;
+}
+
+.filterArea {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.searchWrapper {
+  width: 260px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--text-primary);
+}
+
+.table th {
+  color: #cbc9f0;
+  font-size: 0.75rem;
+  padding: 0 1rem 0.5rem;
+  text-align: left;
+}
+
+.table td {
+  font-weight: 100;
+  padding: 1.8rem;
+  background-color: var(--background-color-tertiary);
+  vertical-align: middle;
+}
+
+.nameCell {
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.editBtn {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.editBtn:hover {
+  color: var(--text-primary);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+.pagination button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.pagination button:disabled {
+  opacity: 0.3;
+}
+
+.pageNumber:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.activePage {
+  background: rgba(168, 166, 184, 0.2);
+  color: #3a2ee4;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+  }
+
+  .addBtn {
+    padding: 0.8rem 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .tableCard {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tableHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .filterArea {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .searchWrapper {
+    flex: 1;
+    width: auto;
+  }
+
+  .titleArea h2 {
+    font-size: 1.1rem;
+  }
+
+  .titleArea p {
+    font-size: 0.8rem;
+  }
+
+  .table th {
+    font-size: 0.7rem;
+    padding: 0 6px 8px 6px;
+    white-space: nowrap;
+  }
+
+  .table td {
+    padding: 0.5rem 6px;
+    font-size: 0.8rem;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+}

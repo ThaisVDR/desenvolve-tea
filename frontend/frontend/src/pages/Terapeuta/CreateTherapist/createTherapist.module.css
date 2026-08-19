@@ -1,0 +1,188 @@
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add_therapist_modal {
+  background-color: var(--background-color-quarternary);
+  border-radius: var(--border-radius-lg);
+  width: 498px;
+  max-width: 40vw;
+  max-height: 96vh;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.close_btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: var(--text-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal_title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.therapist_form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form_group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form_group input {
+  background-color: var(--input-color-secondary);
+  border: none;
+  outline: none;
+}
+
+.select_input {
+  background-color: var(--input-color-secondary);
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: var(--border-radius-md, 8px);
+  color: var(--text-primary, #ffffff);
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a0aec0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+}
+
+.select_input:focus {
+  outline: 1px solid var(--border-color-primary, #4a5568);
+}
+
+.select_input option {
+  background-color: var(--background-color-quarternary, #1e1f32);
+  color: var(--text-primary, #ffffff);
+  padding: 10px;
+}
+
+.modal_content {
+  display: flex;
+  gap: 64px;
+}
+.modal_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.modal_footer button {
+  width: fit-content;
+  padding: 12px 32px;
+}
+
+@media (max-width: 768px) {
+  .modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add_therapist_modal {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 90vw;
+    max-width: 380px;
+    height: auto;
+    max-height: 95vh;
+    overflow: hidden;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: var(--background-color-quarternary, #181922fd);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .close_btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal_title {
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .modal_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .modal_footer button {
+    width: 100%;
+    font-size: 14px;
+    max-width: 280px;
+  }
+
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+  }
+
+  .form_group label {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .form_group input {
+    width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+  }
+}
